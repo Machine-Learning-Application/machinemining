@@ -1,4 +1,4 @@
-#!/home/ashvinee/Documents/machine/bin/python
+#!/home/ashvinee/Documents/machinemining/machine/bin/python
 
 import sys
 import getopt

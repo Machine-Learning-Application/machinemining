@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+  <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>{% block head_title %}Machine Mining{% endblock %}</title>
+       <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+	   <script type="text/javascript" src="{% static 'bootstrap/js/jquery-1.10.2.min.js' %}"></script>
+       <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+	<script>
+
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+</script>
+	  <style>
+      {% block style %}{% include 'style.css' %}{% endblock %}
+      </style>
+ </head>
+
+<body>
+
+<header id="header">
+<div class="content">
+<div id="logo"><a href=""> MACHINE MINING </a></div>
+<div>
+<nav id="nav">
+	<ul>
+		<li><a href="#slide1" class="active" title="Next Section" >Home</a></li>
+		<li><a href="#slide2" title="Next Section">Tech</a></li>
+		<li><a href="#slide3" title="Next Section">Learn</a></li>
+		<li><a  href="#slide4" title="Next Section">About</a></li>
+		<li><a href="#slide5" title="Next Section">Login</a></li>
+	</ul>
+</nav>
+</div>
+</div>
+</header>
+
+	<div id="slide1">
+		<div class="content">
+			<div id="christmas_tree"> </div>
+			<div id="snowflakes1"></div>
+			<div id="snowflakes2"></div>
+            <h2>MACHINE</h2>
+		    <h1>LEARNING</h1>
+		    <div id="divider"> </div>
+		     <h3>TEACH MACHINE HOW TO LEARN </h3>
+           <div id="ribbon"></div>
+	       <div id="new_year"> </div>
+		</div>
+    </div>
+
+
+
+	<div id="slide2">
+		<div class="content" >
+            <div class="quotes_container">
+		    <h3 class="quotes">“Imagine if your success in life is determined only by your guts, your hard work, and your willpower, and not by the wealth of your parents. I think it'll be a much more interesting world. I think this could change the way the planet is run.”</h3>
+		  <img src="{% static 'images/Andrew_Ng.jpg' %}" align="left"/> <h4 class="author_name_gray">Andrew Ng </h4>
+		</div>
+		</div>
+    </div>
+
+
+   <div id="slide3">
+		<div class="content">
+			   <div class="quotes_container">
+		       <h3 class="quotes">“People worry that computers will get too smart and take over the world, but the real problem is that they're too stupid and they've already taken over the world.”  </h3>
+		      <img src="{% static 'images/pedro_domingos.jpg' %}" align="left"/> <h4 class="author_name_white"> Pedro Domingos </h4>
+		    </div>
+		</div>
+    </div>
+
+
+	<div id="slide4">
+		<div class="content">
+              <div class="quotes_container">
+		    <h3 class="quotes">“Python has been an important part of Google since the beginning, and remains so as the system grows and evolves. Today dozens of Google engineers use Python, and we're looking for more people with skills in this language.” </h3>
+		  <img src="{% static 'images/Peter_norvig.jpg' %}" align="left"/> <h4 class="author_name_gray">Peter Norvig</h4>
+		</div>
+		</div>
+    </div>
+
+
+	<div id="slide5">
+		<div class="content">
+           <div class="quotes_container">
+		    <h3 class="quotes">“It's really about a spectrum of increasing autonomy and how humans and robots work together so that each can be doing the thing that its best at.” </h3>
+		    <img src="{% static 'images/john_langford.jpg' %}" align="left"/> <h4 class="author_name_white">John Langford</h4>
+		  </div>
+		<div id="copyright"><a href="http://www.machinemining.com/">Copyright machinemining.com </a></div>
+		</div>
+    </div>
+
+</body>
+</html>

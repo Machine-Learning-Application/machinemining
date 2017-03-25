@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Machine Mining</title>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  </head>
+  <style>
+        #header{
+            background-image: url("{% static 'images/header.png' %}");
+            height: 80px;
+            width: 100%;
+            margin-top: 0px;
+            position: fixed;
+        }
+        #logo{
+            margin-top: 20px;
+            margin-left: 10px;
+            font-size: 30px;
+            color: #FFFFFF;
+            float: left;
+            text-decoration: none;
+            font-family: "wellfleet";
+            font-weight:bold;
+        }
+        #nav{
+            width: 210px;
+            float: right;
+            margin-top: 10px;
+        }
+        #ulist{
+        }
+        li{display: inline
+        }
+        #alist{
+            color: #FFFFFF;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 30px;
+        }
+        #a{
+            text-decoration-style: solid;
+            float: left;
+            font-size: 20px;
+            width: 100%;
+            height: 50px;
+            padding-top: 25px;
+            padding-left: 175px;
+            color: #FFFFFF;
+            position:absolute;
+            margin-top: -0.65px;
+        }
+        #christmasstree{
+            background-image: url("{% static 'images/christmas-tree.png' %}");
+            margin: 0px auto;
+            position: relative;
+            height: 77px;
+            width: 48px;
+            bottom: -35px;
+            margin-bottom: 30px;
+        }
+        h1{
+            text-align: center;
+            color: #FFFFFF;
+            margin: 0px;
+            font-size: 45px;
+        }
+        h2{
+            text-align: center;
+            color: #FFFFFF;
+            margin: 0px;
+            font-size: 60px;
+        }
+        #slide1{
+            background-image: url("{% static 'images/slide1.jpg' %}");
+            width: 100%;
+            margin: 0px;
+            height: 600px;
+            padding: 150px 0px 260px;
+        }
+        #slide2{
+            background-color: #FFFFFF;
+            width: 100%;
+            height: 300px;
+            margin: 0px;
+            padding: 150px 0px 260px;
+        }
+        #mt1{
+            background-image: url("{% static 'images/snowflakes.png' %}");
+            margin: 0px auto;
+            position: relative;
+            display: block;
+            height: 21px;
+            width: 24px;
+            bottom: -58px;
+            left: -130px;
+        }
+        #mt2{
+            background-image: url("{% static 'images/snowflakes.png' %}");
+            margin: 0px auto;
+            position: relative;
+            display: block;
+            height: 21px;
+            width: 24px;
+            bottom: -39px;
+            left: 122px;
+        }
+        #container{
+            text-align: left;
+            color: black;
+            font-weight: lighter;
+            font-size: 20px;
+            padding: 12%;
+        }
+        #content{
+            margin: 0px auto;
+            width: 960px;
+        }
+        img{
+            height: 80px;
+        }
+        h4{
+            margin: -50px 0px 0px 90px ;
+        }
+  </style>
+  <link rel="shortcut icon" href="{% static 'images/fav.png' %}" type="image/x-icon">
+  <body>
+
+    <header id="header">
+        <div class="content">
+            <div id="logo"><a href=""> Machine Mining </a></div>
+        </div>
+        <div>
+            <nav id="nav">
+	            <ul>
+		            <li><a href="#slide1" class="active" title="Next Section" >Slide 1</a></li>
+		            <li><a href="#slide2" title="Next Section">Slide 2</a></li>
+		            <li><a href="#slide3" title="Next Section">Slide 3</a></li>
+		            <li><a  href="#slide4" title="Next Section">Slide 4</a></li>
+		            <li><a href="#slide5" title="Next Section">Slide 5</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+<!----- HEADER END--->
+
+<!----- SLIDES START --->
+	<div id="slide1">
+		<div class="content">
+			<div id="christmas_tree"> </div>
+			<div id="snowflakes1"></div>
+			<div id="snowflakes2"></div>
+            <h2>MERRY</h2>
+		    <h1>CHRISTMAS</h1>
+		    <div id="divider"> </div>
+		     <h3>HAPPY NEW YEAR </h3>
+           <div id="ribbon"></div>
+	       <div id="new_year"> </div>
+		</div>
+    </div>
+    <div>
+
+
+	<div id="slide2">
+		<div class="content" >
+            <div class="quotes_container">
+		    <h3 class="quotes">“Then the Grinch thought of something he hadn't before! What if Christmas, he thought, doesn't come from a store. What if Christmas...perhaps...means a little bit more!”</h3>
+		  <img src="img/dr-seuss.png" align="left"/> <h4 class="author_name_gray">Dr. Seuss </h4>
+		</div>
+		</div>
+    </div>
+
+
+   <div id="slide3">
+		<div class="content">
+			   <div class="quotes_container">
+		       <h3 class="quotes">“I truly believe that if we keep telling the Christmas story, singing the Christmas songs, and living the Christmas spirit, we can bring joy and happiness and peace to this world.”  </h3>
+		      <img src="img/norman.png" align="left"/> <h4 class="author_name_white">Norman Vincent Peale </h4>
+		    </div>
+		</div>
+    </div>
+
+
+	<div id="slide4">
+		<div class="content">
+              <div class="quotes_container">
+		    <h3 class="quotes">“Christmas doesn't come from a store, maybe Christmas perhaps means a little bit more....” </h3>
+		  <img src="img/dr-seuss.png" align="left"/> <h4 class="author_name_gray">Dr. Seuss </h4>
+		</div>
+		</div>
+    </div>
+
+
+	<div id="slide5">
+		<div class="content">
+           <div class="quotes_container">
+		    <h3 class="quotes">“My idea of Christmas, whether old-fashioned or modern, is very simple: loving others. Come to think of it, why do we have to wait for Christmas to do that?” </h3>
+		    <img src="img/bob.png" align="left"/> <h4 class="author_name_white">Bob Hope </h4>
+		  </div>
+		<div id="copyright"><a href="http://www.1stwebdesigner.com/">Copyright 1stwebdesigner.com </a></div>
+		</div>
+
+
+    </div>
+
+<!----- SLIDES END --->
+
+    <!--<h1>Hello, world!</h1>-->
+    <!--<img src="{% static 'images/abc.jpg' %}" alt="dgfdgd" class="responsive">-->
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="{% static 'bootstrap/css/bootstrap.min.js' %}" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>
